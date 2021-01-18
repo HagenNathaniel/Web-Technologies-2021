@@ -1,0 +1,62 @@
+body, html {
+  
+    height: 100%;
+      padding: 0;
+      margin: 0;
+      background-image: url("./imgs/AILab.jpg");
+      background-attachment: fixed;
+      background-repeat: repeat;
+      background-size: cover;
+      background-position: center;
+      font-family: 'Redressed', cursive;
+      font-weight: 300;
+  }
+
+/* Hero Image Rules */
+.hero {
+ 
+  height: 100vh;
+  min-height: 740px;
+  background-image: url("Science_Hall_SS.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .8);
+}
+
+.hero .title {
+  font-size: 22pt;
+  color: #fff;
+  float: right;
+  margin-top: 170px;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 2em;
+  text-align: center;
+  background-color: rgba(120, 120, 120, 0.7);
+}
+
+
+.title h1 {
+  font-family: 'Redressed', cursive;
+  font-size: 2.5em;
+  letter-spacing: 0.2em;
+}
+
+.title h2 {
+  font-family: 'Redressed', cursive;
+  font-weight: 300;
+  font-style: bold;
+  line-height: 0.5em;
+}
+.hero .title {
+  font-size: 22pt;
+  color: #fff;
+  float: right;
+  margin-top: 170px;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 2em;
+  text-align: center;
+  background-color: rgba(120, 120, 120, 0.7);
+}
