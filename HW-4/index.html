@@ -1,0 +1,75 @@
+<html>
+    <style>
+        body{
+            background-color: forestgreen;
+        }
+    </style>
+    <script>
+        function getChoice1()
+        {
+            var myChoice = document.getElementById("choice").value;
+            var myQuestion = document.getElementById("question");
+            if(myChoice === "Daggers")
+            {
+                document.getElementById("choice").style.display="none";
+                document.getElementById("btnSubmit").style.display="none";
+                
+                document.getElementById("choice2").style.display="block";
+                document.getElementById("btnSubmit2").style.display="block";
+                
+
+                myQuestion.innerHTML = "You chose Daggers, what's your favorite Candy";
+            }
+            else if(myChoice === "Bow")
+            {
+                myQuestion.innerHTML = "You chose Bow,  What is your favorite tv Series";
+
+            }
+            else
+            {
+                myQuestion.innerHTML = "Invalid answer";
+            }
+        
+        }
+        function getChoice2()
+        {
+            var food = document.getElementById("choice2").value;
+            var myQuestion = document.getElementById("question");
+            if(candy == "3 Musketeers")
+            {
+                document.getElementById("mainImage").src = "./imgs/3musketeers.jpg"
+                myQuestion.innerHTML = "I love a Musketeer on a Moody Monday!";
+            }
+            else if(food === "nachos")
+            {
+                myQuestion.innerHTML = "I Don't Mind a little Heat, but they like to bring it!";
+            }
+        }
+    </script>
+    <body>
+
+        <h1>Dungeons and Delicacies</h1>
+        <br>
+        <img src="./imgs/dungeonEntrance.jpg" id="mainImage">
+        <div id ="question">
+            <br>
+            Upon leaving the inn following her harrowing adventure against a young Troll, Silvia the tiefling rogue is exploring a small wooded area a ways away from the road to the next town.
+            <br>
+            She comes across the entrance to a cave, which looks to be an unexplored dungeon! "I should probably check this out, it looks promising!" she thinks to herself.
+            <br>
+            She thinks about what weapon to go with during her delving. A set of daggers, or her bow.
+            </div>
+       
+        <br>
+        <input type="text" size="30" id="choice" value="Please enter either Daggers or Bow">
+        <button id="btnSubmit" onclick="getChoice1();">Click to continue</button>
+
+        <input type="text" size="30" id="choice2" value="Enter favorite Candy (Three Musketeers or Hot Tamales)." style="display:none">
+        <button id="btnSubmit2" onclick="getChoice2();"  style="display:none">Click to continue</button>
+
+        <input type="text" size="30" id="choice3" value="Enter Favorite TV series."  style="display:none">
+        <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Click to continue</button>
+
+    </body>
+
+</html>
