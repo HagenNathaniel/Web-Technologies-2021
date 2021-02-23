@@ -1,4 +1,4 @@
-This sweek was the beginning of our matching game project.
+This week was the beginning of our matching game project.
 
 I was fully able to write it all myself, which made me very proud, as I was able to do for the last few assignments.
 
